@@ -67,9 +67,11 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 function is31Flavors(flav){
   if(flav.length === 31){
     return true
+  } else {
+    return false
   }
  }
-console.log("Task 2", is31Flavors(flavorCopy))
+console.log("Task 2", is31Flavors(originalFlavors))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -89,7 +91,7 @@ function addFlavor(array, flavor){
   array.unshift(flavor);
   return array;
  }
-console.log('Task 3', addFlavor(flavorCopy, 'Rainbow Sherbert'))
+console.log('Task 3', addFlavor(originalFlavors, 'Rainbow Sherbert'))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -108,7 +110,7 @@ function removeLastFlavor(array){
  array.pop();
  return array;
 }
-console.log('Task 4', removeLastFlavor(flavorCopy))
+console.log('Task 4', removeLastFlavor(originalFlavors))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -126,7 +128,7 @@ Use the getFlavorByIndex function below to do the following:
 function getFlavorByIndex(flavor, index){
   return flavor[index];
 }
-console.log('Task 5', getFlavorByIndex(flavorCopy, 5));
+console.log('Task 5', getFlavorByIndex(originalFlavors, 2));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -148,7 +150,7 @@ function removeFlavorByName(array, string){
     return array;
   
 }
-console.log('Task 6', removeFlavorByName(flavorCopy, 'Rocky Road'))
+console.log('Task 6', removeFlavorByName(originalFlavors, 'Rocky Road'))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -169,16 +171,17 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-let filterFilter = []
+
 function filterByWord(array, filter){
+  let filteredArray = [];
   for(let i = 0; i < array.length; i++){
     if(array[i].includes(filter)){
-      filterFilter.push(array[i])
+      filteredArray.push(array[i])
     }
   }
-  return filterFilter
+  return filteredArray
 }
-
+console.log('Task 7', filterByWord(originalFlavors, 'Chocolate'))
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
 
