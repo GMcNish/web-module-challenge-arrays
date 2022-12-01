@@ -144,11 +144,11 @@ Use the removeFlavorByName function below to do the following:
 */
 
 function removeFlavorByName(array, string){
-  for(let i =0; i < array.length; i++){
-    
-  }
+  array.splice(array.indexOf(string), 1);
+    return array;
+  
 }
-
+console.log('Task 6', removeFlavorByName(flavorCopy, 'Rocky Road'))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -169,11 +169,15 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-
-function filterByWord(/*your code here*/){
-  /*your code here*/
+let filterFilter = []
+function filterByWord(array, filter){
+  for(let i = 0; i < array.length; i++){
+    if(array[i].includes(filter)){
+      filterFilter.push(array[i])
+    }
+  }
+  return filterFilter
 }
-
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
