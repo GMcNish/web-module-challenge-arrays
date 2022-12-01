@@ -48,9 +48,9 @@ Use the copy function below to do the following:
 let flavorCopy = []
 function copy(copyArray){
   flavorCopy = copyArray
+  return flavorCopy
 }
-copy(originalFlavors);
-console.log('Task 1', flavorCopy)
+console.log('Task 1', copy(originalFlavors))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -192,8 +192,18 @@ Use the getAverageWordLength function below to do the following:
   For example: getAverageWordLength(originalFlavors) should return a number between 0 and 3.     
 */
 
-function getAverageWordLength(/*code here*/){
-  /*code here*/
+
+function getAverageWordLength(array){
+  /* let totalNumber = 0
+  let arr = []
+  let arrNumber = 0
+  for(i = 0; i < array.length; i++){
+    arr = array[i].split(' ');
+    arrNumber = arr.length;
+    totalNumber = Math.round(totalNumber + arr.length)
+    }
+    totalNumber = totalNumber/array.length
+    return totalNumber */
 }
 
 
